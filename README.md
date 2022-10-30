@@ -1,2 +1,2 @@
-# canopy_analysis_Itapetininga
-Canopy analysis from a forest inventory
+# Canopy analysis
+Canopy analysis from a forest inventory at Itapetininga
