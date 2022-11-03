@@ -100,8 +100,20 @@ dt[, 11:12]
 \  A parcela `r dt[ which.max( dt[, 6 ] ), 1 ]` obteve a maior cobertura foliar, com `r dt[ which.max( dt[, 6 ] ), 6 ] * 100`%. Já a parcela `r dt[ which.min( dt[, 6 ] ), 1 ]`, apresentou a menor porcentagem de cobertura foliar, com `r dt[ which.min( dt[, 6 ] ), 6 ] * 100`%.
 
 
+```{r, echo = FALSE}
+parcs <- read.csv2( "parcelas.csv" )
+
+```
+\  O estrato 1 apresentou maior média de vcomcc `r round( mean( parcs[ parcs$estrato == 1, 4 ] ), 2 )` e o estrato 2 uma menor média `r round( mean( parcs[ parcs$estrato == 2, 4 ] ), 2 )`, resultado esperado, considerando os dados apresentados acima referentes às parcelas presentes no estrato 2 (16 e 15), já a parcela 20 (com maior cobertura foliar) pertence ao estrato 1. Dessa forma, foi  possível confirmar o que se encontra na literatura em relação ao dossel de florestas plantadas, pois quanto maior a cobertura foliar maior a produção.
+
+
 # Considerações finais
 
 \  Importante salientar que algumas parcelas apresentaram cobertura foliar de espécies nativas, o que gerou influência nas análises de dossel feitas por pixel apresentadas anteriormente.  
+
+
+
+
+
 
 
